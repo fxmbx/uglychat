@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js" type="module"></script>
+        <style>
+            body{
+                margin : 10px auto;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                height: 100vh;
+                width: 90%;
+                max-width: 1200px;
+            }
+            #message-container{
+                border: 1px solid black;
+                flex-grow: 1;
+                overflow-y:auto ;
+            }
+            #message-container div {
+                background-color: #ccc;
+                padding: 5px;
+            }
+            #message-container div:nth-child(2n){
+background-color: #fff;
+            }
+            #form{
+                margin-bottom: 10px;
+                width: 90%;
+                padding: auto;
+                position: absolute;
+                bottom: 0;
+            }
+            #form label{
+                width: 15%;
+                margin-bottom: 10px;
+
+            }
+            #form input{
+                width: 75%;
+                margin-bottom: 10px;
+                border: 1px dashed black;
+            }
+            #form button{
+                width: 10%;
+                margin-bottom: 10px;
+
+            }
+        </style>
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="message-container">
+            
+            <form action="" id="form">
+                <label for="message-input">Message</label>
+                <input type="text" name="" id="message-input">
+                <button type="submit" id="send-button">Send</button>
+
+                <label for="room-input">Room</label>
+                <input type="text" name="" id="room-input">
+                <button type="submit" id="room-button">Join</button>
+
+            </form>
+        </div>
+    </body>
+</html>
